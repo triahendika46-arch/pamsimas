@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PAMSIMAS - Dusun Weru</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@600;800;900&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;font-family:'Poppins',Arial,sans-serif}
+body{margin:0;background:#D6E9FF;padding:0 0 24px}
+.header{background:linear-gradient(180deg,#00A0FF,#0070D6);color:#fff;padding:26px 16px 20px;text-align:center;border-radius:0 0 24px 24px}
+.judul-seni{font-family:'Great Vibes',cursive;font-size:54px;line-height:1;margin:0}
+.card{background:#fff;margin:14px;padding:16px;border-radius:20px;box-shadow:0 4px 14px rgba(0,0,0,.08)}
+input{width:100%;padding:12px;border:2px solid #0090FF;border-radius:12px;margin-top:8px;font-weight:700}
+.btn{background:#0090FF;color:#fff;border:0;width:100%;padding:14px;border-radius:14px;font-weight:800;font-size:16px;margin-top:10px}
+.btn2{background:#fff;color:#0070D6;border:2px solid #0090FF;padding:12px;border-radius:12px;font-weight:800;width:100%;margin-top:8px}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.item{background:#C2DEFF;padding:14px 6px;border-radius:14px;text-align:center;font-weight:800;font-size:13px}
+.tanda-tangan{font-family:'Great Vibes',cursive;font-size:38px;color:#0A2A6B;text-align:center;margin-top:22px}
+.hidden{display:none}
+</style></head><body>
+<div class="header"><div class="judul-seni">PAMSIMAS Berkah</div><p>PAMSIMAS Dusun Weru • 1 APK Gabungan</p></div>
+
+<!-- LOGIN -->
+<div id="login" class="card"><b style="font-size:20px">Pilih Login PAMSIMAS</b><br><small>Pilih peran kamu</small>
+<button class="btn" onclick="masuk('pelanggan')">👤 Pelanggan - BUDI SANTOSO • ID 0725</button>
+<button class="btn2" onclick="masuk('pengurus')">👔 Pengurus PAMSIMAS</button>
+<button class="btn2" onclick="masuk('bendahara')">💰 Bendahara</button>
+<button class="btn2" onclick="masuk('teknisi')">🔧 Teknisi - Catat Meteran</button>
+<button class="btn2" onclick="masuk('super')">👑 Super Admin - Hendika WP</button>
+<input placeholder="Masukkan ID Pengguna (contoh: 0725)">
+<input type="password" placeholder="Masukkan Password">
+<button class="btn" onclick="masuk('pelanggan')">Masuk</button></div>
+
+<!-- PELANGGAN -->
+<div id="pelanggan" class="hidden"><div class="card"><b>Halo BUDI SANTOSO</b><br>ID 0725 • PAMSIMAS Dusun Weru<br><h2 style="color:#0090FF;margin:6px 0">Rp 20.000</h2>Tagihan November 2026 • Rutin 20 • Tempo 30 Akhir Bulan<br><b>Status: Belum Dibayar</b></div>
+<div class="card"><div class="grid"><div class="item">🧾<br>Lihat Tagihan</div><div class="item">🖨️<br>Cetak Tagihan</div><div class="item">💰<br>Bayar Sekarang</div><div class="item">📊<br>Riwayat</div><div class="item">💧<br>Lapor Kebocoran</div><div class="item">ℹ️<br>Info Tarif</div></div></div></div>
+
+<!-- PENGURUS -->
+<div id="pengurus" class="hidden"><div class="card"><b>Halo Pengurus PAMSIMAS</b><br>Total KK: <b>342</b> • Aktif: 336 • Non-Aktif: 6<div class="grid" style="margin-top:10px"><div class="item">👥<br>Data Warga</div><div class="item">🧾<br>Tagihan</div><div class="item">📈<br>Laporan Bulanan</div><div class="item">📢<br>Pengumuman</div></div></div></div>
+
+<!-- BENDAHARA -->
+<div id="bendahara" class="hidden"><div class="card"><b>Halo Bendahara</b><br>Kas Masuk: <b>Rp 15.100.000</b><br>Kas Keluar: <b>Rp 2.300.000</b><br>Saldo: <b>Rp 12.800.000</b><div class="grid" style="margin-top:10px"><div class="item">💰<br>Input Pemasukan</div><div class="item">🧾<br>Input Pengeluaran</div><div class="item">📊<br>Laporan Keuangan</div><div class="item">🖨️<br>Cetak Laporan</div></div></div></div>
+
+<!-- TEKNISI -->
+<div id="teknisi" class="hidden"><div class="card"><b>Halo Teknisi!</b><br>Catat Meteran • Foto Opsional<div class="grid" style="margin-top:10px"><div class="item">📝<br>Catat Meteran</div><div class="item">📷<br>Foto Meteran</div><div class="item">🔧<br>Lapor Kerusakan</div><div class="item">👥<br>Daftar Pelanggan</div></div><button class="btn" onclick="alert('Tambah Pelanggan Baru - ID Otomatis 0726')">+ Tambah Pelanggan</button></div>
+<div class="card"><b>Belum Bayar: 45 orang • Rp 900.000</b></div></div>
+
+<!-- SUPER ADMIN -->
+<div id="super" class="hidden"><div class="card"><b>Halo, Hendika WP - Super Admin PAMSIMAS</b><br>Total Pelanggan: <b>342</b> • Pendapatan: <b>Rp 15.100.000</b><br>Rutin 20 • Tempo 30
+<div class="grid" style="margin-top:10px"><div class="item">📁<br>Data Pelanggan</div><div class="item">🧾<br>Tagihan</div><div class="item">💳<br>Pembayaran</div><div class="item">📈<br>Laporan Keuangan</div><div class="item">⚙️<br>Pengaturan Tarif<br><small>Rp 20.000</small></div><div class="item">👥<br>Tambah / Hapus Pengurus</div><div class="item">🔒<br>Segel Pelanggan</div><div class="item">🔔<br>Notifikasi</div></div>
+<button class="btn" style="background:#FF3B30" onclick="alert('Hapus Pelanggan - Hanya Super Admin!')">🗑️ Hapus Pelanggan</button></div></div>
+
+<div class="card" id="backBtn" style="display:none"><button class="btn2" onclick="location.reload()">⬅️ Kembali ke Login</button></div>
+<div class="tanda-tangan">By Hendika WP</div>
+<script>
+function masuk(role){
+document.getElementById('login').style.display='none';
+document.getElementById(role).classList.remove('hidden');
+document.getElementById('backBtn').style.display='block';
+}
+</script></body></html>
